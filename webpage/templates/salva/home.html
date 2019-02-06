@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'content' %}
+
+<!-- Header with Background Image -->
+<header class="business-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="display-3 text-center text-white mt-4">Your happiness is my business</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-8">
+            <h2 class="mt-4">What We Do</h2>
+            <p style="font-size:18px">Salvatore paints offers a professional exterior painting service in New York, we
+                have a service provision of high
+                quality and optimal performance, for its greater economy, comfort and availability of time.
+                Our company is the solution in the maintenance and painting of all types of gates.</p>
+            <a class="btn btn-primary btn-lg" href="tel:+19179957183">Call Me! &raquo;</a>
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <h2 class="mt-4">Contact Us</h2>
+            <address>
+                <strong>Whatsapp</strong>
+                <br><a class="btn btn-primary btn-lg" href="https://wa.me/+19179957183"><i class="fab fa-whatsapp fa-lg"></i></a>
+                <br>
+            </address>
+            <address>
+                <strong>Phone number</strong>
+                <br><a class="btn btn-primary btn-lg" href="tel:+19179957183"><i class="fas fa-phone fa-lg"
+                                                                                 aria-hidden="true"></i></a>
+                <br>
+            </address>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+        <div class="col-sm-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="{% static 'images/paint4.jpeg' %}" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">The Best Materials</h4>
+                    <p class="card-text">For us it is very important to use paints and premium materials such as the use
+                        of paintings and tools.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="{% static 'images/paint3.jpeg' %}" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Work Team</h4>
+                    <p class="card-text">You can have the best tools and materials, but without the experience of
+                        skilled labor you may not achieve the same results we offer you, without stains on the floor or
+                        furniture, we leave everything clean for your comfort.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="{% static 'images/paint5.jpeg' %}" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Ask For A Quote</h4>
+                    <p class="card-text">We have the best prices, we include in the quote labor, materials and
+                        paint.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+{% endblock %}

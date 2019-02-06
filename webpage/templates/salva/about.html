@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'content' %}
+<div class="container">
+    <!-- Introduction Row -->
+    <h1 class="my-4">About Us
+        <small>It's Nice to Meet You!</small>
+    </h1>
+    <p>Hello! We are a married couple who are dedicated to painting all kinds of gates in the city of New York. We work
+        with the best materials, we do it without leaving any disaster at home and also in the shortest possible
+        time.</p>
+
+    <!-- Team Members Row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="my-4">Our Team</h2>
+            <hr/>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'images/salva-pic.png' %}" alt="">
+            <h3>Salvatore Cavitolo
+                <br/>
+                <small>Business Owner</small>
+            </h3>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'images/liliana-pic.png' %}" alt="">
+            <h3>Liliana Cavitolo
+                <br/>
+                <small>Employee</small>
+            </h3>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
