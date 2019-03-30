@@ -8,20 +8,30 @@ body {
     padding-top: 54px;
 }
 
-@media (min-width: 992px) {
+@media (max-width: @screen-xs) {
     body {
-        padding-top: 56px;
+        font-size: 10px;
     }
+}
+
+@media (max-width: @screen-sm) {
+    body {
+        font-size: 14px;
+    }
+}
+
+
+h1 {
+    font-size: 1.4em;
 }
 
 .business-header {
     height: 50vh;
     min-height: 300px;
-    background:url('/static/images/header-img.jpeg') center center no-repeat scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+    background-image: url('/static/images/header-img.jpg');
     background-size: cover;
-    -o-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .card {
